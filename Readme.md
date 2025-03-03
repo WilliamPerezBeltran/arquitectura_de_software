@@ -323,10 +323,60 @@ Es fundamental **considerar los contextos específicos** y las particularidades 
 Así, tomamos **decisiones informadas** que **maximizan el éxito** de nuestros sistemas.
 
 ===================================
--------------- Arquitectura, panorama y definición -------------- 
+-------------- Arquitectura  -------------- 
+
+# ¿Qué es la arquitectura de software?
+
+La arquitectura de software es un concepto amplio que muchas veces se asocia con modelos y diagramas llenos de líneas y cajas que representan la solución de un sistema. Sin embargo, va más allá del simple modelado. Se trata de un análisis profundo de lo que hay que construir, los requerimientos que se deben considerar y cómo el sistema los resolverá.
+
+## Definiciones clave de la arquitectura de software
+
+### Estructura de un sistema
+Según el libro *Software Architecture in Practice*, la arquitectura es la estructura compuesta por elementos y sus propiedades. La arquitectura se centra en la organización estructural del software, que puede involucrar agrupación en módulos u objetos, ocultamiento de propiedades y exposición de APIs públicas.
+
+### Conjunto de decisiones
+*Software Architecture Foundations, Theory, and Practice* se enfoca en las decisiones de diseño que son cruciales para la construcción del sistema. Este enfoque destaca la importancia de decisiones que impactan en los requerimientos y la calidad del software.
+
+### Importancia de las actividades
+Martin Fowler, en *Patterns of Enterprise Application Architecture*, define la arquitectura como cualquier actividad importante para el sistema. Su planteamiento está alineado con metodologías ágiles, sugiriendo que la arquitectura debe emerger del equipo de desarrollo mediante decisiones críticas.
+
+## ¿Cómo influyen los arquitectos de software en las organizaciones?
+
+Un arquitecto de software no solamente diseña sistemas, también juega un rol esencial dentro de las organizaciones. Su labor se ve impactada por las distintas metodologías de trabajo y la dinámica organizativa.
+
+### Responsabilidades de un arquitecto de software
+
+- **Toma de decisiones**: Los arquitectos deben evaluar los requerimientos y decidir cómo estructurarlos para maximizar la calidad del sistema.
+- **Influir en la implementación**: Sus decisiones son clave para guiar la implementación del software hacia los objetivos planteados.
+- **Adaptación a metodologías**: En contextos ágiles, la arquitectura emerge de decisiones colaborativas y el arquitecto debe facilitar este proceso dentro del equipo.
+
+## Ejemplos de arquitecturas en la práctica
+
+### La arquitectura de Twitter
+La arquitectura de Twitter es un ejemplo ilustrativo de cómo una aplicación maneja grandes volúmenes de datos e interacción en tiempo real:
+
+- **Write API**: Al enviar un tweet, la petición pasa a través de una API que distribuye información a distintos módulos.
+- **Procesamiento de mensajes**: Servicios internos gestionan hashtags, menciones y se encargan de actualizar las timelines adecuadas, conectando al autor del mensaje con todos los seguidores.
+
+### La arquitectura de Amazon
+Amazon ofrece otra perspectiva centrada en el despliegue de aplicaciones:
+
+- **Despliegue escalable**: Utilizan servidores autoescalables y contenedores para maximizar la eficiencia del despliegue.
+- **Servicios complementarios**: Ofrecen servicios de base de datos, caché, y más para facilitar la implementación y operación de aplicaciones en su infraestructura.
+
+### Arquitectura de una aplicación Flax
+Esta aplicación muestra cómo manejar el flujo de datos a través de su arquitectura:
+
+- **Flujo de datos unidireccional**: Flax establece conexiones entre módulos asegurando que los datos viajen en una única dirección, crucial para aplicaciones frontend modernas como las de React.
+
+## ¿Cómo se refleja la arquitectura en diagramas?
+Cada sistema de software puede ser visualizado mediante diferentes diagramas arquitectónicos que resaltan atributos o vistas distintas del sistema. Estas vistas ayudan a evaluar criterios como el flujo de datos, la disponibilidad, y la carga del sistema, influenciando las decisiones arquitectónicas. Por ejemplo, Flax se enfoca en el flujo de datos, mientras que Amazon se preocupa por la disponibilidad y distribución de carga, aspectos críticos en la elección de una arquitectura adecuada.
+
 
 ===================================
--------------- Arquitectura, panorama y definición -------------- 
+-------------- Estilos de arquitectura -----------------
+
+
 
 ===================================
 -------------- Arquitectura, panorama y definición -------------- 
